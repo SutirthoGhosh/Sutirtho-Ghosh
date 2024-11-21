@@ -1,0 +1,185 @@
+
+/* General Reset */
+body, h1, h2, p, ul, li, form, input, textarea, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+    background-color: #121212;
+    line-height: 1.6;
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(to bottom right, #1e3c72, #2a5298);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+.hero-section .hero-title {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    text-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    animation: fadeIn 2s ease-in-out;
+}
+.hero-section .tagline {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    font-style: italic;
+    animation: fadeIn 2.5s ease-in-out;
+}
+.cta-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background: #ff9800;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    animation: pulse 2s infinite;
+}
+.cta-button:hover {
+    background: #ffa726;
+}
+
+/* About Section */
+.about-section {
+    text-align: center;
+    padding: 50px 0;
+    background: #1e1e1e;
+}
+.about-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+.about-section .animated-text {
+    font-size: 1.2rem;
+    animation: slideUp 2s ease-in-out;
+}
+
+/* Skills Section */
+.skills-section {
+    padding: 50px 0;
+    background: #121212;
+    text-align: center;
+}
+.skills-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+.skills-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.skill-card {
+    background: #1e1e1e;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.skill-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 50px 0;
+    background: #1e1e1e;
+}
+.contact-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    border: 1px solid #555;
+    border-radius: 5px;
+    background-color: #222;
+    color: #fff;
+}
+.contact-form button {
+    padding: 10px 20px;
+    background: #1e3c72;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+.contact-form button:hover {
+    background: #2a5298;
+}
+
+/* Footer */
+.footer {
+    background: #121212;
+    padding: 20px 0;
+    text-align: center;
+}
+.footer p {
+    font-size: 0.9rem;
+    color: #aaa;
+}
+.social-icons {
+    margin-top: 10px;
+}
+.social-icons .social-icon {
+    margin: 0 10px;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #ff9800;
+    transition: color 0.3s ease;
+}
+.social-icons .social-icon:hover {
+    color: #ffa726;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes slideUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+}
